@@ -8,6 +8,9 @@ var y int = 90
 const pi float64 = 3.14
 var isGolang bool = true
 
+var testArray = [3]int {1, 2, 3}
+var varLengthTestArray = [...]int {9, 8, 7, 6}
+
 func main() {
 	fmt.Println(quote.Go())
 	fmt.Println(x + y)
@@ -15,5 +18,13 @@ func main() {
 
 	if (isGolang) {
 		fmt.Println("Currently writing in Golang")
+	}
+
+	fmt.Println(testArray[0])
+	fmt.Println()
+
+	// loops have a weirdly nice syntax
+	for i := 0; i < len(varLengthTestArray); i++ {
+		fmt.Println(varLengthTestArray[i])
 	}
 }
