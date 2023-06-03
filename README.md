@@ -1,2 +1,2 @@
 # Go Basics
-🌸 To go or not to go? Learning some basic Golang
+🌸 Learning some basic Golang
