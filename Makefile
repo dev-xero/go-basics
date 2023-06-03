@@ -3,13 +3,13 @@
 .PHONY: fmt lint vet
 
 fmt:
-	gofmt -w ./...
+	gofmt -w .
 
 lint: fmt
-	golint ./...
+	golint .
 
 vet: fmt
-	go vet ./...
+	go vet .
 
 build:
 	go build hello.go
