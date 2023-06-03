@@ -10,6 +10,7 @@ var isGolang bool = true
 
 var testArray = [3]int {1, 2, 3}
 var varLengthTestArray = [...]int {9, 8, 7, 6}
+var testSlice = []int {1, 2, 3, 4, 5}
 
 func main() {
 	fmt.Println(quote.Go())
@@ -26,5 +27,10 @@ func main() {
 	// loops have a weirdly nice syntax
 	for i := 0; i < len(varLengthTestArray); i++ {
 		fmt.Println(varLengthTestArray[i])
+	}
+
+	fmt.Println()
+	for j := 0; j < len(testSlice); j++ {
+		fmt.Print(testSlice[j], " ")
 	}
 }
